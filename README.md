@@ -35,7 +35,7 @@ Next, build your bot with docker.
 
 ```bash
 $ docker build -t telegram-bot-starter .
-$ docker run -d telegram-bot-starter ruby telegram-bot-starter.rb
+$ docker run -d -v $(pwd):/app telegram-bot-starter ruby telegram-bot-starter.rb
 
 ```
 
